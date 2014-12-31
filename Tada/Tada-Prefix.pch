@@ -1,0 +1,43 @@
+//
+//  Tada-Prefix.pch
+//  Tada
+//
+//  Created by Ed on 2014/12/24.
+//  Copyright (c) 2014年 cloudonline. All rights reserved.
+//
+
+#ifndef Tada_Tada_Prefix_pch
+#define Tada_Tada_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+    #import "Config.h"
+    #import "TadaColor.h"
+    #import "DataBaseManager.h"
+    #import "TadaGATracker.h"
+
+
+#endif
+
+
+
+#ifdef RELEASE /* RELEASE */
+
+    #define DLog(__FORMAT__, ...)
+
+#elif AD_HOC /* AD_HOC */
+
+    #define DLog(__FORMAT__, ...) NSLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+
+#else /* DEBUG */
+
+    #define DLog(__FORMAT__, ...) NSLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+
+#endif
+
+#endif

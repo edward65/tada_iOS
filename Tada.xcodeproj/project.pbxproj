@@ -7,13 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188A31CCB2E82599BC3EC260 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B2F33A02CF438224251D8 /* libPods.a */; };
+		2B3893D41A539DB400687083 /* OrderHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3893D31A539DB400687083 /* OrderHistoryTableViewController.m */; };
 		2B53E7881A3AEDF8001D68E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E7871A3AEDF8001D68E5 /* main.m */; };
 		2B53E78B1A3AEDF8001D68E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E78A1A3AEDF8001D68E5 /* AppDelegate.m */; };
-		2B53E78E1A3AEDF8001D68E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E78D1A3AEDF8001D68E5 /* ViewController.m */; };
+		2B53E78E1A3AEDF8001D68E5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E78D1A3AEDF8001D68E5 /* RootViewController.m */; };
 		2B53E7911A3AEDF8001D68E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E78F1A3AEDF8001D68E5 /* Main.storyboard */; };
 		2B53E7931A3AEDF8001D68E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7921A3AEDF8001D68E5 /* Images.xcassets */; };
-		2B53E7961A3AEDF8001D68E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7941A3AEDF8001D68E5 /* LaunchScreen.xib */; };
 		2B53E7A21A3AEDF8001D68E5 /* TadaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E7A11A3AEDF8001D68E5 /* TadaTests.m */; };
+		2B53E7B21A3B024F001D68E5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7AC1A3B024F001D68E5 /* Default-568h@2x.png */; };
+		2B53E7B31A3B024F001D68E5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7AD1A3B024F001D68E5 /* Default@2x.png */; };
+		2B53E7B41A3B024F001D68E5 /* intro_pic1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7AE1A3B024F001D68E5 /* intro_pic1.png */; };
+		2B53E7B51A3B024F001D68E5 /* intro_pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7AF1A3B024F001D68E5 /* intro_pic2.png */; };
+		2B53E7B61A3B024F001D68E5 /* intro_pic3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7B01A3B024F001D68E5 /* intro_pic3.png */; };
+		2B53E7B71A3B024F001D68E5 /* LaunchBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7B11A3B024F001D68E5 /* LaunchBackground.png */; };
+		2B53E7BC1A3B0291001D68E5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7BA1A3B0291001D68E5 /* Icon.png */; };
+		2B53E7BD1A3B0291001D68E5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B53E7BB1A3B0291001D68E5 /* Icon@2x.png */; };
+		2B9871401A497C9A00A492C3 /* add_store.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B98713F1A497C9A00A492C3 /* add_store.png */; };
+		2BC48CB01A4CF3C4002203A5 /* AddPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC48CAF1A4CF3C4002203A5 /* AddPlaceViewController.m */; };
+		2BC48CB31A4CFD7B002203A5 /* TadaServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC48CB21A4CFD7B002203A5 /* TadaServer.m */; };
+		2BC6764B1A4AACC30069D5E4 /* DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6764A1A4AACC30069D5E4 /* DataBaseManager.m */; };
+		2BC6764D1A4AAD5B0069D5E4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC6764C1A4AAD5B0069D5E4 /* libsqlite3.dylib */; };
+		2BD0A5901A429243003A7357 /* OrderItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0A58F1A429243003A7357 /* OrderItemViewController.m */; };
+		2BD0A5961A42B7BA003A7357 /* OrderItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0A5951A42B7BA003A7357 /* OrderItemView.m */; };
+		2BEB45CA1A4024F300326B63 /* VerifyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45C91A4024F300326B63 /* VerifyCodeViewController.m */; };
+		2BEB45CD1A40250E00326B63 /* SendEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45CC1A40250E00326B63 /* SendEmailViewController.m */; };
+		2BEB45D01A40315000326B63 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45CF1A40315000326B63 /* OrderViewController.m */; };
+		2BEB45D31A403A3B00326B63 /* OrderFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45D21A403A3B00326B63 /* OrderFromViewController.m */; };
+		2BEB45D61A403A4A00326B63 /* OrderToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45D51A403A4A00326B63 /* OrderToViewController.m */; };
+		2BEB45D91A403A6100326B63 /* OrderReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45D81A403A6100326B63 /* OrderReviewViewController.m */; };
+		2BEB45DC1A403A6D00326B63 /* OrderProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45DB1A403A6D00326B63 /* OrderProcessViewController.m */; };
+		2BEB45DF1A40466B00326B63 /* TadaColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45DE1A40466B00326B63 /* TadaColor.m */; };
+		2BFC83C21A3E86F3008A1DB2 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC83C11A3E86F3008A1DB2 /* Config.m */; };
+		2BFC83C61A3E8870008A1DB2 /* TadaGATracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC83C41A3E8870008A1DB2 /* TadaGATracker.m */; };
+		2BFC83CB1A3E8FC5008A1DB2 /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC83CA1A3E8FC5008A1DB2 /* EnterViewController.m */; };
+		2BFC83CE1A3E9666008A1DB2 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC83CD1A3E9666008A1DB2 /* SignupViewController.m */; };
+		2BFC83D11A3E9675008A1DB2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC83D01A3E9675008A1DB2 /* LoginViewController.m */; };
+		2BFC84091A3EDFCE008A1DB2 /* Intro3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC84081A3EDFCE008A1DB2 /* Intro3ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +57,72 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B3893D21A539DB400687083 /* OrderHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHistoryTableViewController.h; sourceTree = "<group>"; };
+		2B3893D31A539DB400687083 /* OrderHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHistoryTableViewController.m; sourceTree = "<group>"; };
 		2B53E7821A3AEDF8001D68E5 /* Tada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B53E7861A3AEDF8001D68E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B53E7871A3AEDF8001D68E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B53E7891A3AEDF8001D68E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B53E78A1A3AEDF8001D68E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2B53E78C1A3AEDF8001D68E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2B53E78D1A3AEDF8001D68E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B53E78C1A3AEDF8001D68E5 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		2B53E78D1A3AEDF8001D68E5 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		2B53E7901A3AEDF8001D68E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B53E7921A3AEDF8001D68E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2B53E7951A3AEDF8001D68E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2B53E79B1A3AEDF8001D68E5 /* TadaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TadaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B53E7A01A3AEDF8001D68E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B53E7A11A3AEDF8001D68E5 /* TadaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TadaTests.m; sourceTree = "<group>"; };
+		2B53E7AC1A3B024F001D68E5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		2B53E7AD1A3B024F001D68E5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		2B53E7AE1A3B024F001D68E5 /* intro_pic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = intro_pic1.png; path = Resources/intro_pic1.png; sourceTree = "<group>"; };
+		2B53E7AF1A3B024F001D68E5 /* intro_pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = intro_pic2.png; path = Resources/intro_pic2.png; sourceTree = "<group>"; };
+		2B53E7B01A3B024F001D68E5 /* intro_pic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = intro_pic3.png; path = Resources/intro_pic3.png; sourceTree = "<group>"; };
+		2B53E7B11A3B024F001D68E5 /* LaunchBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchBackground.png; path = Resources/LaunchBackground.png; sourceTree = "<group>"; };
+		2B53E7BA1A3B0291001D68E5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Tada/Icon.png; sourceTree = "<group>"; };
+		2B53E7BB1A3B0291001D68E5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Tada/Icon@2x.png"; sourceTree = "<group>"; };
+		2B98713F1A497C9A00A492C3 /* add_store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add_store.png; path = Resources/add_store.png; sourceTree = "<group>"; };
+		2BC48CAE1A4CF3C4002203A5 /* AddPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlaceViewController.h; sourceTree = "<group>"; };
+		2BC48CAF1A4CF3C4002203A5 /* AddPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlaceViewController.m; sourceTree = "<group>"; };
+		2BC48CB11A4CFD7B002203A5 /* TadaServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TadaServer.h; sourceTree = "<group>"; };
+		2BC48CB21A4CFD7B002203A5 /* TadaServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TadaServer.m; sourceTree = "<group>"; };
+		2BC676481A4AA8140069D5E4 /* Tada-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tada-Prefix.pch"; sourceTree = "<group>"; };
+		2BC676491A4AACC30069D5E4 /* DataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseManager.h; sourceTree = "<group>"; };
+		2BC6764A1A4AACC30069D5E4 /* DataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseManager.m; sourceTree = "<group>"; };
+		2BC6764C1A4AAD5B0069D5E4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2BD0A58E1A429243003A7357 /* OrderItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderItemViewController.h; sourceTree = "<group>"; };
+		2BD0A58F1A429243003A7357 /* OrderItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderItemViewController.m; sourceTree = "<group>"; };
+		2BD0A5941A42B7BA003A7357 /* OrderItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderItemView.h; sourceTree = "<group>"; };
+		2BD0A5951A42B7BA003A7357 /* OrderItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderItemView.m; sourceTree = "<group>"; };
+		2BEB45C81A4024F300326B63 /* VerifyCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyCodeViewController.h; sourceTree = "<group>"; };
+		2BEB45C91A4024F300326B63 /* VerifyCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyCodeViewController.m; sourceTree = "<group>"; };
+		2BEB45CB1A40250E00326B63 /* SendEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendEmailViewController.h; sourceTree = "<group>"; };
+		2BEB45CC1A40250E00326B63 /* SendEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendEmailViewController.m; sourceTree = "<group>"; };
+		2BEB45CE1A40315000326B63 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		2BEB45CF1A40315000326B63 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		2BEB45D11A403A3B00326B63 /* OrderFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFromViewController.h; sourceTree = "<group>"; };
+		2BEB45D21A403A3B00326B63 /* OrderFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFromViewController.m; sourceTree = "<group>"; };
+		2BEB45D41A403A4A00326B63 /* OrderToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderToViewController.h; sourceTree = "<group>"; };
+		2BEB45D51A403A4A00326B63 /* OrderToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderToViewController.m; sourceTree = "<group>"; };
+		2BEB45D71A403A6100326B63 /* OrderReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderReviewViewController.h; sourceTree = "<group>"; };
+		2BEB45D81A403A6100326B63 /* OrderReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderReviewViewController.m; sourceTree = "<group>"; };
+		2BEB45DA1A403A6D00326B63 /* OrderProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderProcessViewController.h; sourceTree = "<group>"; };
+		2BEB45DB1A403A6D00326B63 /* OrderProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderProcessViewController.m; sourceTree = "<group>"; };
+		2BEB45DD1A40466B00326B63 /* TadaColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TadaColor.h; sourceTree = "<group>"; };
+		2BEB45DE1A40466B00326B63 /* TadaColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TadaColor.m; sourceTree = "<group>"; };
+		2BFC83C01A3E86F3008A1DB2 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		2BFC83C11A3E86F3008A1DB2 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		2BFC83C41A3E8870008A1DB2 /* TadaGATracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TadaGATracker.m; sourceTree = "<group>"; };
+		2BFC83C51A3E8870008A1DB2 /* TadaGATracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TadaGATracker.h; sourceTree = "<group>"; };
+		2BFC83C91A3E8FC5008A1DB2 /* EnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterViewController.h; sourceTree = "<group>"; };
+		2BFC83CA1A3E8FC5008A1DB2 /* EnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterViewController.m; sourceTree = "<group>"; };
+		2BFC83CC1A3E9666008A1DB2 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		2BFC83CD1A3E9666008A1DB2 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		2BFC83CF1A3E9675008A1DB2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2BFC83D01A3E9675008A1DB2 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		2BFC84071A3EDFCE008A1DB2 /* Intro3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro3ViewController.h; sourceTree = "<group>"; };
+		2BFC84081A3EDFCE008A1DB2 /* Intro3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro3ViewController.m; sourceTree = "<group>"; };
+		35B2E74756CD9734A9EAA564 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A27B2F33A02CF438224251D8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43D01217B1F9DAA5CF00A08 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC6764D1A4AAD5B0069D5E4 /* libsqlite3.dylib in Frameworks */,
+				188A31CCB2E82599BC3EC260 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +145,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11EB14274C1B090431680BBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E43D01217B1F9DAA5CF00A08 /* Pods.debug.xcconfig */,
+				35B2E74756CD9734A9EAA564 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2B53E7791A3AEDF8001D68E5 = {
 			isa = PBXGroup;
 			children = (
+				2B53E7BA1A3B0291001D68E5 /* Icon.png */,
+				2B53E7BB1A3B0291001D68E5 /* Icon@2x.png */,
+				2B53E7AB1A3AF322001D68E5 /* Resources */,
 				2B53E7841A3AEDF8001D68E5 /* Tada */,
 				2B53E79E1A3AEDF8001D68E5 /* TadaTests */,
 				2B53E7831A3AEDF8001D68E5 /* Products */,
+				11EB14274C1B090431680BBA /* Pods */,
+				89CD08F1AF47023DF8AEBB83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +180,43 @@
 		2B53E7841A3AEDF8001D68E5 /* Tada */ = {
 			isa = PBXGroup;
 			children = (
+				2BFC83C01A3E86F3008A1DB2 /* Config.h */,
+				2BFC83C11A3E86F3008A1DB2 /* Config.m */,
+				2BC676491A4AACC30069D5E4 /* DataBaseManager.h */,
+				2BC6764A1A4AACC30069D5E4 /* DataBaseManager.m */,
+				2BFC83C31A3E8865008A1DB2 /* Components */,
 				2B53E7891A3AEDF8001D68E5 /* AppDelegate.h */,
 				2B53E78A1A3AEDF8001D68E5 /* AppDelegate.m */,
-				2B53E78C1A3AEDF8001D68E5 /* ViewController.h */,
-				2B53E78D1A3AEDF8001D68E5 /* ViewController.m */,
+				2B53E78C1A3AEDF8001D68E5 /* RootViewController.h */,
+				2B53E78D1A3AEDF8001D68E5 /* RootViewController.m */,
+				2BEB45C81A4024F300326B63 /* VerifyCodeViewController.h */,
+				2BEB45C91A4024F300326B63 /* VerifyCodeViewController.m */,
+				2BEB45CE1A40315000326B63 /* OrderViewController.h */,
+				2BEB45CF1A40315000326B63 /* OrderViewController.m */,
+				2B3893D21A539DB400687083 /* OrderHistoryTableViewController.h */,
+				2B3893D31A539DB400687083 /* OrderHistoryTableViewController.m */,
+				2BEB45D11A403A3B00326B63 /* OrderFromViewController.h */,
+				2BEB45D21A403A3B00326B63 /* OrderFromViewController.m */,
+				2BEB45D41A403A4A00326B63 /* OrderToViewController.h */,
+				2BEB45D51A403A4A00326B63 /* OrderToViewController.m */,
+				2BC48CAE1A4CF3C4002203A5 /* AddPlaceViewController.h */,
+				2BC48CAF1A4CF3C4002203A5 /* AddPlaceViewController.m */,
+				2BEB45D71A403A6100326B63 /* OrderReviewViewController.h */,
+				2BEB45D81A403A6100326B63 /* OrderReviewViewController.m */,
+				2BEB45DA1A403A6D00326B63 /* OrderProcessViewController.h */,
+				2BEB45DB1A403A6D00326B63 /* OrderProcessViewController.m */,
+				2BEB45CB1A40250E00326B63 /* SendEmailViewController.h */,
+				2BEB45CC1A40250E00326B63 /* SendEmailViewController.m */,
+				2BFC84071A3EDFCE008A1DB2 /* Intro3ViewController.h */,
+				2BFC84081A3EDFCE008A1DB2 /* Intro3ViewController.m */,
+				2BFC83C91A3E8FC5008A1DB2 /* EnterViewController.h */,
+				2BFC83CA1A3E8FC5008A1DB2 /* EnterViewController.m */,
+				2BFC83CC1A3E9666008A1DB2 /* SignupViewController.h */,
+				2BFC83CD1A3E9666008A1DB2 /* SignupViewController.m */,
+				2BFC83CF1A3E9675008A1DB2 /* LoginViewController.h */,
+				2BFC83D01A3E9675008A1DB2 /* LoginViewController.m */,
 				2B53E78F1A3AEDF8001D68E5 /* Main.storyboard */,
 				2B53E7921A3AEDF8001D68E5 /* Images.xcassets */,
-				2B53E7941A3AEDF8001D68E5 /* LaunchScreen.xib */,
 				2B53E7851A3AEDF8001D68E5 /* Supporting Files */,
 			);
 			path = Tada;
@@ -98,6 +227,7 @@
 			children = (
 				2B53E7861A3AEDF8001D68E5 /* Info.plist */,
 				2B53E7871A3AEDF8001D68E5 /* main.m */,
+				2BC676481A4AA8140069D5E4 /* Tada-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +249,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2B53E7AB1A3AF322001D68E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B98713F1A497C9A00A492C3 /* add_store.png */,
+				2B53E7AC1A3B024F001D68E5 /* Default-568h@2x.png */,
+				2B53E7AD1A3B024F001D68E5 /* Default@2x.png */,
+				2B53E7AE1A3B024F001D68E5 /* intro_pic1.png */,
+				2B53E7AF1A3B024F001D68E5 /* intro_pic2.png */,
+				2B53E7B01A3B024F001D68E5 /* intro_pic3.png */,
+				2B53E7B11A3B024F001D68E5 /* LaunchBackground.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2BFC83C31A3E8865008A1DB2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2BFC83C51A3E8870008A1DB2 /* TadaGATracker.h */,
+				2BFC83C41A3E8870008A1DB2 /* TadaGATracker.m */,
+				2BEB45DD1A40466B00326B63 /* TadaColor.h */,
+				2BEB45DE1A40466B00326B63 /* TadaColor.m */,
+				2BD0A58E1A429243003A7357 /* OrderItemViewController.h */,
+				2BD0A58F1A429243003A7357 /* OrderItemViewController.m */,
+				2BD0A5941A42B7BA003A7357 /* OrderItemView.h */,
+				2BD0A5951A42B7BA003A7357 /* OrderItemView.m */,
+				2BC48CB11A4CFD7B002203A5 /* TadaServer.h */,
+				2BC48CB21A4CFD7B002203A5 /* TadaServer.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		89CD08F1AF47023DF8AEBB83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BC6764C1A4AAD5B0069D5E4 /* libsqlite3.dylib */,
+				A27B2F33A02CF438224251D8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B53E7A51A3AEDF8001D68E5 /* Build configuration list for PBXNativeTarget "Tada" */;
 			buildPhases = (
+				DFBBC62ABF3F680D59CDBB43 /* Check Pods Manifest.lock */,
 				2B53E77E1A3AEDF8001D68E5 /* Sources */,
 				2B53E77F1A3AEDF8001D68E5 /* Frameworks */,
 				2B53E7801A3AEDF8001D68E5 /* Resources */,
+				3C8B4CC9378BD1DA61915C43 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +340,7 @@
 				TargetAttributes = {
 					2B53E7811A3AEDF8001D68E5 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2LEUZ2E33T;
 					};
 					2B53E79A1A3AEDF8001D68E5 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -200,8 +373,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B53E7911A3AEDF8001D68E5 /* Main.storyboard in Resources */,
-				2B53E7961A3AEDF8001D68E5 /* LaunchScreen.xib in Resources */,
+				2B53E7B21A3B024F001D68E5 /* Default-568h@2x.png in Resources */,
+				2B53E7BC1A3B0291001D68E5 /* Icon.png in Resources */,
+				2B9871401A497C9A00A492C3 /* add_store.png in Resources */,
+				2B53E7B51A3B024F001D68E5 /* intro_pic2.png in Resources */,
+				2B53E7B61A3B024F001D68E5 /* intro_pic3.png in Resources */,
+				2B53E7BD1A3B0291001D68E5 /* Icon@2x.png in Resources */,
+				2B53E7B31A3B024F001D68E5 /* Default@2x.png in Resources */,
+				2B53E7B71A3B024F001D68E5 /* LaunchBackground.png in Resources */,
 				2B53E7931A3AEDF8001D68E5 /* Images.xcassets in Resources */,
+				2B53E7B41A3B024F001D68E5 /* intro_pic1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +395,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C8B4CC9378BD1DA61915C43 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFBBC62ABF3F680D59CDBB43 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B53E77E1A3AEDF8001D68E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B53E78E1A3AEDF8001D68E5 /* ViewController.m in Sources */,
+				2BC48CB31A4CFD7B002203A5 /* TadaServer.m in Sources */,
+				2BD0A5961A42B7BA003A7357 /* OrderItemView.m in Sources */,
+				2BFC83D11A3E9675008A1DB2 /* LoginViewController.m in Sources */,
+				2BEB45DC1A403A6D00326B63 /* OrderProcessViewController.m in Sources */,
+				2BC48CB01A4CF3C4002203A5 /* AddPlaceViewController.m in Sources */,
+				2B3893D41A539DB400687083 /* OrderHistoryTableViewController.m in Sources */,
+				2BD0A5901A429243003A7357 /* OrderItemViewController.m in Sources */,
+				2BC6764B1A4AACC30069D5E4 /* DataBaseManager.m in Sources */,
+				2BEB45D31A403A3B00326B63 /* OrderFromViewController.m in Sources */,
+				2BFC84091A3EDFCE008A1DB2 /* Intro3ViewController.m in Sources */,
+				2BEB45D01A40315000326B63 /* OrderViewController.m in Sources */,
+				2B53E78E1A3AEDF8001D68E5 /* RootViewController.m in Sources */,
+				2BEB45DF1A40466B00326B63 /* TadaColor.m in Sources */,
+				2BFC83CB1A3E8FC5008A1DB2 /* EnterViewController.m in Sources */,
+				2BEB45CA1A4024F300326B63 /* VerifyCodeViewController.m in Sources */,
+				2BFC83C21A3E86F3008A1DB2 /* Config.m in Sources */,
+				2BEB45D91A403A6100326B63 /* OrderReviewViewController.m in Sources */,
 				2B53E78B1A3AEDF8001D68E5 /* AppDelegate.m in Sources */,
 				2B53E7881A3AEDF8001D68E5 /* main.m in Sources */,
+				2BFC83CE1A3E9666008A1DB2 /* SignupViewController.m in Sources */,
+				2BEB45CD1A40250E00326B63 /* SendEmailViewController.m in Sources */,
+				2BEB45D61A403A4A00326B63 /* OrderToViewController.m in Sources */,
+				2BFC83C61A3E8870008A1DB2 /* TadaGATracker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +484,6 @@
 				2B53E7901A3AEDF8001D68E5 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2B53E7941A3AEDF8001D68E5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B53E7951A3AEDF8001D68E5 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -341,21 +567,33 @@
 		};
 		2B53E7A61A3AEDF8001D68E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43D01217B1F9DAA5CF00A08 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "Tada/Tada-prefix.pch";
 				INFOPLIST_FILE = Tada/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		2B53E7A71A3AEDF8001D68E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B2E74756CD9734A9EAA564 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "Tada/Tada-prefix.pch";
 				INFOPLIST_FILE = Tada/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -412,6 +650,7 @@
 				2B53E7A71A3AEDF8001D68E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B53E7A81A3AEDF8001D68E5 /* Build configuration list for PBXNativeTarget "TadaTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +659,7 @@
 				2B53E7AA1A3AEDF8001D68E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

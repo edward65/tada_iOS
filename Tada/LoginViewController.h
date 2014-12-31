@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  LoginViewController.h
 //  Tada
 //
-//  Created by Ed on 2014/12/12.
+//  Created by Ed on 2014/12/15.
 //  Copyright (c) 2014年 cloudonline. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LoginViewController : UIViewController
 
 @end
-
