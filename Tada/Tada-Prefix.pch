@@ -31,11 +31,15 @@
 #elif AD_HOC /* AD_HOC */
 
     #define DLog(__FORMAT__, ...) NSLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+    #define USE_TADA_STAGING_SERVER
+
 
 
 #else /* DEBUG */
 
     #define DLog(__FORMAT__, ...) NSLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+    #define USE_TADA_STAGING_SERVER
+
 
 
 #endif

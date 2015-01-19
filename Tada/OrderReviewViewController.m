@@ -102,7 +102,17 @@
     [dataBaseManager addOrder:_items storeName:_storeName placeName:_placeName placeDistrict:_placeDistrict placeAddress:_placeAddress placePhone:_placePhone placeNote:_placeNote];
     
     
+    
+    NSString *receiveAddress = [NSString stringWithFormat:@"%@%@", _placeDistrict,_placeAddress];
+
     //sync to server
+    [[TadaServer sharedServer] addOrder:_items
+                              storeName:_storeName
+                        receivePlace:_placeName
+                         receiveAddress:receiveAddress
+                           receivePhone:_placePhone
+                            receiveNote:_placeNote];
+
     
     
     // go to orderprocessVC
