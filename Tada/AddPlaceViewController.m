@@ -36,7 +36,7 @@
     
     // Initialize Data
     // Initialize Data
-    _pickerData =  [[Config sharedInstance].districtArray mutableCopy];
+    _pickerData =  [[Config sharedInstance].service_area mutableCopy];
     
     
     config = [Config sharedInstance];

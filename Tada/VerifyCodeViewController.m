@@ -25,7 +25,7 @@
 
 - (void)login{
     
-    [[Config sharedInstance] setIsLogged:true];
+    //[[Config sharedInstance] setIsLogged:true];
     
     [self performSegueWithIdentifier:@"orderVC" sender:self];
 

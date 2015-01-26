@@ -30,6 +30,12 @@
 	</array>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NotoSansHant-Regular.otf</string>
+		<string>NotoSansHant-Thin.otf</string>
+		<string>NotoSansHant-Light.otf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

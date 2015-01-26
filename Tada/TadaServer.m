@@ -8,19 +8,6 @@
 
 #import "TadaServer.h"
 
-NSString *TADA_SERVER_API_VERSION  = @"v1";
-
-#ifdef USE_TADA_STAGING_SERVER
-
-    NSString *TADA_SERVER = @"http://manage-dev.tada.tw";
-
-#else
-
-    NSString *TADA_SERVER = @"http://manage.tada.tw";
-
-#endif
-
-
 
 @implementation TadaServer
 
@@ -34,7 +21,7 @@ NSString *TADA_SERVER_URL;
         
         if (!_sharedServer) {
             
-            TADA_SERVER_URL = [NSString stringWithFormat:@"%@/api/%@", TADA_SERVER, TADA_SERVER_API_VERSION];
+            TADA_SERVER_URL = [NSString stringWithFormat:@"%@/api/%@", [[Config sharedInstance] TADA_SERVER], [[Config sharedInstance] api_version]];
             _sharedServer = [[self alloc] init];
 
         }

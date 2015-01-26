@@ -16,7 +16,21 @@
 // v1.0
 
 //system
-@property (nonatomic) NSString              *TADA_SERVER;
+
+@property (nonatomic) int                   systemVersion;//系統資料版本 (預設為 1)
+@property (nonatomic) NSString              *api_version;//api版本 (預設為 v1)
+@property (nonatomic) NSString              *api_URL;//api URL
+@property (nonatomic) NSString              *api_URL_staging;//api URL staging
+@property (nonatomic) NSMutableArray        *service_area;//服務地區
+@property (nonatomic) BOOL                  inviteEnable;//邀請碼機制（預設開啟）
+@property (nonatomic) NSString              *terms;//服務條款
+@property (nonatomic) NSString              *policy;//隱私條款
+
+
+@property (nonatomic) NSString              *TADA_SERVER;//app read only
+
+
+
 
 
 @property (nonatomic) float          viewAnimateTime;
@@ -24,7 +38,6 @@
 @property (nonatomic) BOOL         isLogged;
 
 
-@property (nonatomic)NSMutableArray    *districtArray;//服務區域
 
 @property (nonatomic) NSDictionary              *orderDict;//order 內容
 

@@ -3,6 +3,18 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSansHant-Regular.otf">
+            <string>NotoSansHant-Regular</string>
+            <string>NotoSansHant-Regular</string>
+        </mutableArray>
+        <mutableArray key="NotoSansHant-Thin.otf">
+            <string>NotoSansHant-Thin</string>
+            <string>NotoSansHant-Thin</string>
+            <string>NotoSansHant-Thin</string>
+            <string>NotoSansHant-Thin</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="XG6-Mk-yWk">
@@ -94,7 +106,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bR5-t3-4W0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="fxy-kM-JDh" kind="relationship" relationship="rootViewController" id="qJy-Os-MiC"/>
@@ -137,7 +149,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99607843137254903" green="0.84313725490196079" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96470588239999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="EnterView" id="rXC-hb-OJM"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -156,76 +168,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="台北市信義區" textAlignment="center" minimumFontSize="17" id="uvC-H1-8Z1">
-                                <rect key="frame" x="50" y="66" width="220" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="29"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="9Xg-S8-k6y" id="zEo-Qk-vz0"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手機號碼" textAlignment="center" minimumFontSize="17" id="2q9-LB-N39">
-                                <rect key="frame" x="50" y="129" width="220" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="29"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                                <connections>
-                                    <action selector="phoneNumTouch:" destination="9Xg-S8-k6y" eventType="touchUpInside" id="QEU-IJ-KlW"/>
-                                </connections>
-                            </textField>
-                            <view contentMode="scaleToFill" id="GOB-ns-8p5" userLabel="terms policy View">
-                                <rect key="frame" x="0.0" y="426" width="320" height="40"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Vz9-ct-r5I">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You automatically agree to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u60-LH-uEP">
-                                        <rect key="frame" x="42" y="7" width="148" height="15"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="所在行政區" textAlignment="center" minimumFontSize="17" id="uvC-H1-8Z1">
+                                        <rect key="frame" x="50" y="26" width="220" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wh5-Ui-sOU">
-                                        <rect key="frame" x="191" y="7" width="95" height="15"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="terms of service">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <color key="textColor" red="0.84313725490196079" green="0.82745098039215681" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSansHant-Thin" family="Noto Sans T Chinese" pointSize="36"/>
+                                        <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="termsAction:" destination="9Xg-S8-k6y" eventType="touchUpInside" id="Vqp-U9-p7R"/>
+                                            <outlet property="delegate" destination="9Xg-S8-k6y" id="zEo-Qk-vz0"/>
                                         </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yla-YR-2gp">
-                                        <rect key="frame" x="47" y="21" width="42" height="15"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="你的名稱" textAlignment="center" minimumFontSize="17" id="sW1-VF-awx">
+                                        <rect key="frame" x="50" y="111" width="220" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bzs-bB-6wI">
-                                        <rect key="frame" x="71" y="21" width="80" height="15"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="privacy policy">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <color key="textColor" red="0.84313725490000002" green="0.82745098039999998" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSansHant-Thin" family="Noto Sans T Chinese" pointSize="36"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
-                                            <action selector="policyAction:" destination="9Xg-S8-k6y" eventType="touchUpInside" id="zto-Wn-BvW"/>
+                                            <outlet property="delegate" destination="9Xg-S8-k6y" id="uLO-j3-SU1"/>
                                         </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by pressing this button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tMl-Dn-X1u">
-                                        <rect key="frame" x="153" y="21" width="128" height="15"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手機號碼" textAlignment="center" minimumFontSize="17" id="2q9-LB-N39">
+                                        <rect key="frame" x="50" y="196" width="220" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <color key="textColor" red="0.84313725490196079" green="0.82745098039215681" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSansHant-Thin" family="Noto Sans T Chinese" pointSize="36"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
+                                        <connections>
+                                            <action selector="phoneNumTouch:" destination="9Xg-S8-k6y" eventType="touchUpInside" id="QEU-IJ-KlW"/>
+                                            <outlet property="delegate" destination="9Xg-S8-k6y" id="l4d-IM-vWj"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邀請碼" textAlignment="center" minimumFontSize="17" id="cIi-ml-l3e">
+                                        <rect key="frame" x="50" y="281" width="220" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.84313725490000002" green="0.82745098039999998" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSansHant-Thin" family="Noto Sans T Chinese" pointSize="36"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="inviteTouch:" destination="9Xg-S8-k6y" eventType="touchUpInside" id="B40-g2-wwO"/>
+                                            <outlet property="delegate" destination="9Xg-S8-k6y" id="nb9-hi-dib"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
+                                <connections>
+                                    <outlet property="delegate" destination="9Xg-S8-k6y" id="o2O-UN-RWs"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wh5-Ui-sOU">
+                                <rect key="frame" x="0.0" y="396" width="320" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansHant-Regular" family="Noto Sans T Chinese" pointSize="17"/>
+                                <state key="normal" title="服務條款+隱私權政策">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.84313725490000002" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="termsAction:" destination="9Xg-S8-k6y" eventType="touchUpInside" id="Vqp-U9-p7R"/>
+                                </connections>
+                            </button>
                             <pickerView contentMode="scaleToFill" id="iz6-KE-Yh2">
                                 <rect key="frame" x="0.0" y="568" width="320" height="81"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -234,20 +239,22 @@
                                     <outlet property="delegate" destination="9Xg-S8-k6y" id="7ZG-xn-kyV"/>
                                 </connections>
                             </pickerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邀請碼" textAlignment="center" minimumFontSize="17" id="cIi-ml-l3e">
-                                <rect key="frame" x="50" y="192" width="220" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N62-BO-HHB">
+                                <rect key="frame" x="0.0" y="441" width="320" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="29"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.84313725490196079" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansHant-Regular" family="Noto Sans T Chinese" pointSize="20"/>
+                                <state key="normal" title="送出">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="inviteTouch:" destination="9Xg-S8-k6y" eventType="touchUpInside" id="B40-g2-wwO"/>
+                                    <action selector="nextView:" destination="9Xg-S8-k6y" eventType="touchUpInside" id="wdZ-Cz-YPF"/>
                                 </connections>
-                            </textField>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99607843137254903" green="0.84313725490196079" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96470588235294119" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Signup" id="Mue-IY-PvV"/>
+                    <navigationItem key="navigationItem" title="註冊" id="Mue-IY-PvV"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -258,8 +265,9 @@
                         <outlet property="inviteTextField" destination="cIi-ml-l3e" id="VdN-5W-G7C"/>
                         <outlet property="phoneTextField" destination="2q9-LB-N39" id="KDs-Hg-Uba"/>
                         <outlet property="picker" destination="iz6-KE-Yh2" id="uus-hQ-bZU"/>
-                        <outlet property="policyBtn" destination="Bzs-bB-6wI" id="ZZB-Hp-FAv"/>
+                        <outlet property="scrollView" destination="Vz9-ct-r5I" id="0H1-iW-hvp"/>
                         <outlet property="termsBtn" destination="wh5-Ui-sOU" id="bWg-QO-1zN"/>
+                        <outlet property="userNameTextField" destination="sW1-VF-awx" id="Gf5-Zc-F7V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ad4-WF-0wt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,7 +305,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99607843137254903" green="0.84313725490196079" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96470588239999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Send Email" id="G8e-4v-g9t"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

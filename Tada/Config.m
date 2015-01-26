@@ -30,12 +30,281 @@ Config *_instance;
 //system
 
 
-- (NSString *)TADA_SERVER{
-    
-    //return @"http://oithem.com/Oi";
 
-    return @"http://dev.worklohas.com:7009/Oi";
+//系統資料版本 (預設為 1),若不同需要更新其他資料
+- (int)systemVersion
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (![defaults objectForKey:@"systemVersion"]) {
+        
+        return 1;
+        
+    }
+    
+    return (int)[defaults integerForKey:@"systemVersion"];
+    
 }
+
+
+
+- (void)setSystemVersion:(int)version
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setInteger:version forKey:@"systemVersion"];
+    
+    [defaults synchronize];
+    
+}
+
+
+
+//api版本 (預設為 v1)
+- (NSString *)api_version
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (![defaults objectForKey:@"api_version"]) {
+        
+        // Default setting
+        [defaults setObject:@"v1" forKey:@"api_version"];
+        [defaults synchronize];
+        
+    }
+    
+    return [defaults objectForKey:@"api_version"];
+    
+}
+
+
+
+- (void)setApi_version:(NSString *)_version
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:_version forKey:@"api_version"];
+    [defaults synchronize];
+    
+}
+
+
+//api URL
+- (NSString *)api_URL
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (![defaults objectForKey:@"api_URL"]) {
+        
+        // Default setting
+        [defaults setObject:@"http://manage.tada.tw" forKey:@"api_URL"];
+        [defaults synchronize];
+        
+    }
+    
+    return [defaults objectForKey:@"api_URL"];
+    
+}
+
+
+
+- (void)setApi_URL:(NSString *)_url
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:_url forKey:@"api_URL"];
+    [defaults synchronize];
+    
+}
+
+
+
+
+//api URL staging
+- (NSString *)api_URL_staging
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (![defaults objectForKey:@"api_URL_staging"]) {
+        
+        // Default setting
+        [defaults setObject:@"http://manage-dev.tada.tw" forKey:@"api_URL_staging"];
+        [defaults synchronize];
+        
+    }
+    
+    return [defaults objectForKey:@"api_URL_staging"];
+    
+}
+
+
+
+- (void)setApi_URL_staging:(NSString *)_url
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:_url forKey:@"api_URL_staging"];
+    [defaults synchronize];
+    
+}
+
+
+
+//服務地區
+- (NSMutableArray *)service_area
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSMutableArray *mutableArray = [[NSMutableArray  alloc] init];
+    
+    if (![defaults objectForKey:@"service_area"]) {
+        
+        mutableArray =  [NSMutableArray arrayWithObjects:@"台北市信義區",@"台北市大安區",@"其他地區",nil];
+        return mutableArray;
+        
+    }
+    
+    
+    return mutableArray;
+    
+}
+
+
+- (void)setService_area:(NSMutableArray *)areaArray
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:areaArray forKey:@"service_area"];
+    
+    [defaults synchronize];
+    
+    
+    
+}
+
+
+
+
+//邀請碼機制（預設開啟）
+- (BOOL)inviteEnable
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (![defaults objectForKey:@"inviteEnable"]) {
+        
+        // Default setting
+        [defaults setBool:YES forKey:@"inviteEnable"];
+        [defaults synchronize];
+        
+    }
+    
+    return [defaults boolForKey:@"inviteEnable"];
+}
+
+
+- (void)setInviteEnable:(BOOL)isEnable
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setBool:isEnable forKey:@"inviteEnable"];
+    
+    [defaults synchronize];
+}
+
+
+//服務條款
+- (NSString *)terms
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (![defaults objectForKey:@"terms"]) {
+        
+        // Default setting
+        [defaults setObject:@"服務條款" forKey:@"terms"];
+        [defaults synchronize];
+        
+    }
+    
+    return [defaults objectForKey:@"terms"];
+    
+}
+
+
+
+- (void)setTerms:(NSString *)_terms
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:_terms forKey:@"terms"];
+    [defaults synchronize];
+    
+}
+
+
+
+
+
+
+//隱私條款
+- (NSString *)policy
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (![defaults objectForKey:@"policy"]) {
+        
+        // Default setting
+        [defaults setObject:@"隱私條款" forKey:@"policy"];
+        [defaults synchronize];
+        
+    }
+    
+    return [defaults objectForKey:@"policy"];
+    
+}
+
+
+
+- (void)setPolicy:(NSString *)_policy
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:_policy forKey:@"policy"];
+    [defaults synchronize];
+    
+}
+
+
+
+- (NSString *)TADA_SERVER
+{
+    
+#ifdef USE_TADA_STAGING_SERVER
+    
+    return [self api_URL_staging];
+
+    
+#else
+    
+    return [self api_URL];
+    
+#endif
+    
+    
+}
+
+
+
+
 
 
 //---- (BOOL)isLogged
@@ -75,43 +344,6 @@ Config *_instance;
 }
 
 
-
-//districtArray ：服務地區必須和 server sync
-- (NSMutableArray *)districtArray
-{
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    NSMutableArray *mutableArray = [[NSMutableArray  alloc] init];
-    
-    
-    if (![defaults objectForKey:@"districtArray"]) {
-        
-        mutableArray =  [NSMutableArray arrayWithObjects:@"台北市信義區",@"台北市大安區",nil];
-
-        return mutableArray;
-        
-    }
-    
-    mutableArray = [[defaults objectForKey:@"districtArray"] mutableCopy];
-    
-    return mutableArray;
-    
-}
-
-
-- (void)setDistrictArray:(NSMutableArray *)_array
-{
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    [defaults setObject:_array forKey:@"districtArray"];
-    
-    [defaults synchronize];
-    
-    
-    
-}
 
 
 - (NSMutableDictionary *)orderDict{

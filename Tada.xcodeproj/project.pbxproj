@@ -30,6 +30,9 @@
 		2BC6764D1A4AAD5B0069D5E4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC6764C1A4AAD5B0069D5E4 /* libsqlite3.dylib */; };
 		2BD0A5901A429243003A7357 /* OrderItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0A58F1A429243003A7357 /* OrderItemViewController.m */; };
 		2BD0A5961A42B7BA003A7357 /* OrderItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0A5951A42B7BA003A7357 /* OrderItemView.m */; };
+		2BE131501A6E597200CBBD09 /* NotoSansHant-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2BE1314D1A6E597200CBBD09 /* NotoSansHant-Light.otf */; };
+		2BE131511A6E597200CBBD09 /* NotoSansHant-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2BE1314E1A6E597200CBBD09 /* NotoSansHant-Regular.otf */; };
+		2BE131521A6E597200CBBD09 /* NotoSansHant-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2BE1314F1A6E597200CBBD09 /* NotoSansHant-Thin.otf */; };
 		2BEB45CA1A4024F300326B63 /* VerifyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45C91A4024F300326B63 /* VerifyCodeViewController.m */; };
 		2BEB45CD1A40250E00326B63 /* SendEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45CC1A40250E00326B63 /* SendEmailViewController.m */; };
 		2BEB45D01A40315000326B63 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB45CF1A40315000326B63 /* OrderViewController.m */; };
@@ -92,6 +95,9 @@
 		2BD0A58F1A429243003A7357 /* OrderItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderItemViewController.m; sourceTree = "<group>"; };
 		2BD0A5941A42B7BA003A7357 /* OrderItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderItemView.h; sourceTree = "<group>"; };
 		2BD0A5951A42B7BA003A7357 /* OrderItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderItemView.m; sourceTree = "<group>"; };
+		2BE1314D1A6E597200CBBD09 /* NotoSansHant-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansHant-Light.otf"; path = "Resources/Fonts/NotoSansHant-Light.otf"; sourceTree = "<group>"; };
+		2BE1314E1A6E597200CBBD09 /* NotoSansHant-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansHant-Regular.otf"; path = "Resources/Fonts/NotoSansHant-Regular.otf"; sourceTree = "<group>"; };
+		2BE1314F1A6E597200CBBD09 /* NotoSansHant-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansHant-Thin.otf"; path = "Resources/Fonts/NotoSansHant-Thin.otf"; sourceTree = "<group>"; };
 		2BEB45C81A4024F300326B63 /* VerifyCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyCodeViewController.h; sourceTree = "<group>"; };
 		2BEB45C91A4024F300326B63 /* VerifyCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyCodeViewController.m; sourceTree = "<group>"; };
 		2BEB45CB1A40250E00326B63 /* SendEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendEmailViewController.h; sourceTree = "<group>"; };
@@ -252,6 +258,7 @@
 		2B53E7AB1A3AF322001D68E5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2BE1314C1A6E596200CBBD09 /* Fonts */,
 				2B98713F1A497C9A00A492C3 /* add_store.png */,
 				2B53E7AC1A3B024F001D68E5 /* Default-568h@2x.png */,
 				2B53E7AD1A3B024F001D68E5 /* Default@2x.png */,
@@ -261,6 +268,16 @@
 				2B53E7B11A3B024F001D68E5 /* LaunchBackground.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		2BE1314C1A6E596200CBBD09 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2BE1314D1A6E597200CBBD09 /* NotoSansHant-Light.otf */,
+				2BE1314E1A6E597200CBBD09 /* NotoSansHant-Regular.otf */,
+				2BE1314F1A6E597200CBBD09 /* NotoSansHant-Thin.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		2BFC83C31A3E8865008A1DB2 /* Components */ = {
@@ -372,9 +389,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE131521A6E597200CBBD09 /* NotoSansHant-Thin.otf in Resources */,
 				2B53E7911A3AEDF8001D68E5 /* Main.storyboard in Resources */,
 				2B53E7B21A3B024F001D68E5 /* Default-568h@2x.png in Resources */,
+				2BE131501A6E597200CBBD09 /* NotoSansHant-Light.otf in Resources */,
 				2B53E7BC1A3B0291001D68E5 /* Icon.png in Resources */,
+				2BE131511A6E597200CBBD09 /* NotoSansHant-Regular.otf in Resources */,
 				2B9871401A497C9A00A492C3 /* add_store.png in Resources */,
 				2B53E7B51A3B024F001D68E5 /* intro_pic2.png in Resources */,
 				2B53E7B61A3B024F001D68E5 /* intro_pic3.png in Resources */,
