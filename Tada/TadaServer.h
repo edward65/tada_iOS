@@ -20,6 +20,10 @@
 
 @protocol LoginDelegate <NSObject>
 
+
+@optional
+
+- (void)userRegisterResponse:(id)json;
 - (void)phoneVerifyCodeResponse:(id)json;
 - (void)sendPhoneNumResponse:(id)json;
 
@@ -41,8 +45,11 @@
 
 
 
-//loaginAPI
+//LoginAPI
+- (void)userRegister:(id <LoginDelegate>)delegate userName:(NSString*)user_name location:(NSString *)location phoneNumber:(NSString *)phone_number inviteCode:(NSString *)invite_code;
+
 - (void)phoneVerifyCode:(id <LoginDelegate>)delegate code:(NSString*)code;
+
 - (void)sendPhoneNum:(id <LoginDelegate>)delegate phoneNum:(NSString*)phoneNum;
 
 

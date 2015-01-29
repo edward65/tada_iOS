@@ -42,8 +42,53 @@ NSString *TADA_SERVER_URL;
 }
 
 
-
 #pragma mark LoginAPI
+
+//user_register
+- (void)userRegister:(id <LoginDelegate>)delegate userName:(NSString*)user_name location:(NSString *)location phoneNumber:(NSString *)phone_number inviteCode:(NSString *)invite_code{
+    
+    
+    
+    NSDictionary *parameters=@{ @"user_name": user_name,
+                                @"location": location,
+                                @"phone_number": phone_number,
+                                @"invite_code": invite_code,
+                                
+                                };
+    
+    NSString *URLString = [NSString stringWithFormat:@"%@/user_register.json", TADA_SERVER_URL];
+    
+    //AFSecurityPolicy *policy = [[AFSecurityPolicy alloc] init];
+    //[policy setAllowInvalidCertificates:YES];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+   // [manager setSecurityPolicy:policy];
+    
+    
+   manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+ 
+
+
+    //manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [manager POST:URLString
+       parameters:parameters
+          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              [delegate userRegisterResponse:(id)responseObject];
+          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              //NSLog(@"Error: %@", error);
+              [delegate userRegisterResponse:nil];
+          }];
+    
+    
+    
+    
+
+
+}
+
+
 
 - (void)phoneVerifyCode:(id <LoginDelegate>)delegate code:(NSString*)code{
 }

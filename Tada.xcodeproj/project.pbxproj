@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		188A31CCB2E82599BC3EC260 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B2F33A02CF438224251D8 /* libPods.a */; };
 		2B3893D41A539DB400687083 /* OrderHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3893D31A539DB400687083 /* OrderHistoryTableViewController.m */; };
+		2B3D46881A75EFB5004771C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B3D46871A75EFB5004771C5 /* Localizable.strings */; };
 		2B53E7881A3AEDF8001D68E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E7871A3AEDF8001D68E5 /* main.m */; };
 		2B53E78B1A3AEDF8001D68E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E78A1A3AEDF8001D68E5 /* AppDelegate.m */; };
 		2B53E78E1A3AEDF8001D68E5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53E78D1A3AEDF8001D68E5 /* RootViewController.m */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		2B3893D21A539DB400687083 /* OrderHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHistoryTableViewController.h; sourceTree = "<group>"; };
 		2B3893D31A539DB400687083 /* OrderHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHistoryTableViewController.m; sourceTree = "<group>"; };
+		2B3D46871A75EFB5004771C5 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2B53E7821A3AEDF8001D68E5 /* Tada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B53E7861A3AEDF8001D68E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B53E7871A3AEDF8001D68E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		2B53E7851A3AEDF8001D68E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B3D46871A75EFB5004771C5 /* Localizable.strings */,
 				2B53E7861A3AEDF8001D68E5 /* Info.plist */,
 				2B53E7871A3AEDF8001D68E5 /* main.m */,
 				2BC676481A4AA8140069D5E4 /* Tada-Prefix.pch */,
@@ -399,6 +402,7 @@
 				2B53E7B51A3B024F001D68E5 /* intro_pic2.png in Resources */,
 				2B53E7B61A3B024F001D68E5 /* intro_pic3.png in Resources */,
 				2B53E7BD1A3B0291001D68E5 /* Icon@2x.png in Resources */,
+				2B3D46881A75EFB5004771C5 /* Localizable.strings in Resources */,
 				2B53E7B31A3B024F001D68E5 /* Default@2x.png in Resources */,
 				2B53E7B71A3B024F001D68E5 /* LaunchBackground.png in Resources */,
 				2B53E7931A3AEDF8001D68E5 /* Images.xcassets in Resources */,

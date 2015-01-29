@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Oi
+
+  Created by Ed on 2014/10/3.
+  Copyright (c) 2014年 Hsiang-Lin Yeh. All rights reserved.
+*/
+
+"ok_alert_btn" = "OK";
+"cancel_alert_btn" = "Cancel";
+"go_alert_btn" = "Go";
+
+
+
+"no_internet_alert_title" = "No Internet";
+"no_internet_alert_msg" = "No Internet Connection";
+"no_internet_alert_btn" = "OK!";
+
+
+"error_internet_alert_title" = "Internet Error";
+"error_internet_alert_msg" = "Internet Connection Error";
+
+
+//網路
+"internet_unkonw_error_msg" = "未知錯誤，請在試一下";
+
+
+
+//註冊
+"registration_fill_data_alert_msg" = "喔喔！有資料填寫不完整，請再確認一下";
+"registration_you_are_member_msg" = "此電話號碼已經是會員囉！請直接登入";
+"registration_unuse_verifycode_msg" = "喔喔！邀請碼無效喔！";
+
+
+//Notification Permission alert
+"apnsPermission_alert_title" = "Notification Permission";
+"apnsPermission_alert_msg" = "Please turn on notification permission in Settings > Notifications so Oi can function properly.";
+
+
+//Camera Permission alert
+"cameraPermission_alert_title" = "Camera Permission";
+"cameraPermission_alert_msg" = "Please turn on camera permission in Settings > Privacy > Camera so Oi can function properly.";
+
+//Contact Permission alert
+"contactPermission_alert_title" = "Contact Permission";
+"contactPermission_alert_msg" = "Please turn on contact permission in Settings > Privacy > Contacts so Oi can function properly.";

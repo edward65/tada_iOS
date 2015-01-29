@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "SendEmailViewController.h"
+#import "TadaServer.h"
 
-@interface SignupViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate,UITextFieldDelegate,UIScrollViewDelegate>{
+
+@interface SignupViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate,UITextFieldDelegate,UIScrollViewDelegate,LoginDelegate>{
 
     NSMutableArray *_pickerData;
     Config *config;
+    UIActivityIndicatorView *indicator;
 
 }
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
@@ -26,7 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 - (IBAction)phoneNumTouch:(id)sender;
 - (IBAction)inviteTouch:(id)sender;
-- (IBAction)nextView:(id)sender;
+- (IBAction)sendAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end

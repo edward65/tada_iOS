@@ -46,7 +46,7 @@
     self.navigationController.navigationBar.topItem.backBarButtonItem=btnBack;
     
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"送出"
-                                                                    style:UIBarButtonItemStyleDone target:self action:@selector(nextView:)];
+                                                                    style:UIBarButtonItemStyleDone target:self action:@selector(sendAction:)];
     self.navigationItem.rightBarButtonItem = rightButton;
     
     
@@ -60,6 +60,12 @@
         inviteTextField.hidden = YES;//隱藏邀請碼輸入區
     
     }
+    
+    
+    indicator = [[UIActivityIndicatorView alloc]initWithFrame:CGRectMake(225, 115, 30, 30)];
+    [indicator setBackgroundColor:[UIColor clearColor]];
+    [indicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
+    [self.view addSubview:indicator];
     
 
 
@@ -232,20 +238,40 @@
 
 }
 
-- (IBAction)nextView:(id)sender {
+- (IBAction)sendAction:(id)sender {
+    
     
     
     NSString *vcIdentifier = @"verifycodeVC";
     
+    UIViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:vcIdentifier];
+    
+    [self.navigationController pushViewController:nextVC animated:YES];
+    
+    
+    
     if ([districtTextField.text isEqualToString:@"其他地區"]) {
-        vcIdentifier = @"sendemailVC";
+        
+        NSString *vcIdentifier = @"sendemailVC";
+        
+        UIViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:vcIdentifier];
+        
+        [self.navigationController pushViewController:nextVC animated:YES];
+        
+        
+    }else{
+    
+        [indicator startAnimating];
+        
+        [[TadaServer sharedServer] userRegister:self userName:userNameTextField.text location:districtTextField.text phoneNumber:phoneTextField.text inviteCode:inviteTextField.text];
+        
+        
+    
     }
     
     
     
-    UIViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:vcIdentifier];
-    
-    [self.navigationController pushViewController:nextVC animated:YES];
+
 }
 
 
@@ -286,6 +312,54 @@
         });
     }
 }
+
+#pragma mark LoginDelegate
+
+- (void)userRegisterResponse:(id)json{
+
+    [indicator stopAnimating];
+    
+    NSLog(@"Edward ====== userRegisterResponse=%@",json);
+    
+    BOOL succeed = [json[@"result"][@"success"] boolValue];
+    
+    if (succeed) {
+        
+        
+        NSString *vcIdentifier = @"verifycodeVC";
+        
+        UIViewController *nextVC = [self.storyboard instantiateViewControllerWithIdentifier:vcIdentifier];
+            
+        [self.navigationController pushViewController:nextVC animated:YES];
+        
+    }else{
+        
+        
+        
+        NSString *errorMessage = NSLocalizedString(@"internet_unkonw_error_msg", nil);
+        NSString *errorCode = json[@"error"];
+        
+        
+        
+        if ([errorCode isEqualToString:@"1"]) {
+            errorMessage = NSLocalizedString(@"registration_you_are_member_msg", nil);
+        }else if([errorCode isEqualToString:@"2"]) {
+            errorMessage = NSLocalizedString(@"registration_unuse_verifycode_msg", nil);
+        }
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
+                                                        message:errorMessage
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        
+        [alert show];
+        
+    }
+
+
+}
+
 
 
 @end
